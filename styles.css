@@ -1,3 +1,8 @@
+:root {
+	--timelinecolor: #8b07d8;
+	--highlightscolor: #af5cdf;
+}
+
 body {
     padding-top: 72px;
 }
@@ -11,10 +16,14 @@ body {
 }
 
 .topicselectors {
-    background-color: black;
+    /* background-color: black; */
     width: 100%;
     margin: 0px;
     overflow: hidden;
+}
+
+.bgdark {
+	background-color: black;
 }
 
 .educationhome {
@@ -90,6 +99,12 @@ body {
     width: 98vw;
 }
 
+.profexpsection {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    width: 98vw;
+}
+
 .section-title {
   margin-bottom: 60px;
 }
@@ -110,14 +125,14 @@ body {
 	content: "";
 	width: 60px;
 	height: 2px;
-	background-color: #ff3636;
+	background-color: var(--timelinecolor);
 	bottom: 0;
 	left: 50%;
 	margin-left: -30px;
 }
 .section-title h4:after {
 	position: absolute;
-	background-color: #ff3636;
+	background-color: var(--timelinecolor);
 	content: "";
 	width: 10px;
 	height: 10px;
@@ -141,7 +156,7 @@ ul.timeline-list:before {
 	content: "";
 	width: 2px;
 	height: 100%;
-	background-color: #ff3636;
+	background-color: var(--timelinecolor);
 	left: 50%;
 	top: 0;
 	-webkit-transform: translateX(-50%);
@@ -154,7 +169,7 @@ ul.timeline-list li {
     width: 100%;
 }
 .timeline_content {
-	border: 2px solid #ff3636;
+	border: 2px solid var(--timelinecolor);
 	background-color:#fff;
 }
 
@@ -180,7 +195,7 @@ ul.timeline-list li:before {
 	content: "";
 	width: 25px;
 	height: 25px;
-	background-color: #ff3636;
+	background-color: var(--timelinecolor);
 	left: 50%;
 	top: 50%;
 	-webkit-transform: translate(-50%, -50%);
@@ -191,13 +206,64 @@ ul.timeline-list li:before {
 	font-size: 18px;
 	font-weight: 500;
 	font-family: poppins;
-	color: #ff3636;
+	color: var(--timelinecolor);
 }
 
 .linkbreak {
     word-break: break-all;
 }
 
-section {
-    width: 100vw;
+.hltitle {
+	text-align: center;
+}
+
+.highlightssection {
+	height: 55vmin;
+	background-color: var(--highlightscolor);
+	padding: 10px 0px 25px 0px;
+}
+
+.bg-hl {
+	background-color: var(--highlightscolor);
+}
+
+.bg-tl {
+	background-color: var(--timelinecolor);
+}
+
+.highlightsobj {
+	height: 100%;
+}
+
+.highlightcards {
+	height: 100%;
+	width: 55%;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+
+.hlcard {
+	height: 100%;
+}
+
+.carousel-item img {
+	width: 100%;
+	padding: 0px;
+}
+
+.phhladjust {
+	height: 100%;
+}
+
+.hlcaption {
+	background-color: rgba(0, 0, 0, .6);
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+}
+
+.hlcaption-small {
+	text-shadow: 2px 2px #000;
 }

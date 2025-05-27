@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src=""></script>
-    <link rel="stylesheet" href="projects.css"/>
+    <link rel="stylesheet" href="../styles.css"/>
 </head>
 <body>
     <div class="">
@@ -40,6 +40,463 @@
                 </nav>
             </header>
         </div>
+        <section>
+            <div class="container-fluid bg-hl mb-0 p-2">
+                <h1 class="mb-0 hltitle">Project Highlights</h1>
+            </div>
+            <div class="highlightssection">
+                <div id="carouselExampleCaptions" class="carousel slide-disable highlightsobj" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner highlightcards">
+                        <div class="carousel-item active hlcard">
+                            <img src="/img/buddyroverhl.jpg" class="d-block" alt="...">
+                            <div class="carousel-caption d-none d-md-block hlcaption w-100">
+                                <h5>CAVEMAN Rover</h5>
+                                <p>Cave Autonomous Vehicle for Exploration, Mapping, and Navigation</p>
+                            </div>
+                            <div class="carousel-caption d-block d-md-none hlcaption-small">
+                                <h2>C.A.V.E.<wbr>M.A.N.</h2>
+                            </div>
+                        </div> 
+                        <div class="carousel-item hlcard">
+                            <img src="/img/placeholder.png" class="d-block phhladjust" alt="...">
+                            <div class="carousel-caption d-none d-md-block hlcaption w-100">
+                                <h5>LiteMonitr</h5>
+                                <p>Live Drawing Display with Programmable LEDs & ESP32</p>
+                            </div>
+                            <div class="carousel-caption d-block d-md-none hlcaption-small">
+                                <h2>Lite<wbr>Monitr</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item hlcard">
+                            <img src="/img/placeholder.png" class="d-block phhladjust" alt="...">
+                            <div class="carousel-caption d-none d-md-block hlcaption w-100">
+                                <h5>SeizureSensor</h5>
+                                <p>Nocturnal Seizure Detection & Monitoring Device</p>
+                            </div>
+                            <div class="carousel-caption d-block d-md-none hlcaption-small">
+                                <h2>Seizure<wbr>Sensor</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <hr class="mt-4 mb-4">
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" >
+            Launch demo modal
+        </button> -->
+        <nav class="navbar navbar-light pb-4">
+            <div class="container-fluid">
+              <a class="navbar-brand"><h1>Projects</h1></a>
+              <form class="d-flex">
+                <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button> -->
+              </form>
+            </div>
+          </nav>
+        <div class="topicselectors">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col d-flex educationhome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#CAVEMANModal">
+                        <img src="/img/placeholder.png">
+                        <h2 class="">C.A.V.E.M.A.N.</h2>
+                    </a>
+                </div>
+                <div class="col d-flex experienceshome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#politicllmModal">
+                        <img src="/img/placeholder.png">
+                        <h2 class="">Political Persuasion Detection LLM</h2>
+                    </a>
+                </div>
+                <div class="col d-flex projectshome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#seizuresensorModal">
+                        <img src="/img/placeholder.png">
+                        <h2 class="">SeizureSensor</h2>
+                    </a>
+                </div>
+                <div class="col d-flex abouthome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#litemonitrModal">
+                        <img src="/img/placeholder.png">
+                        <h2 class="">LiteMonitr</h2>
+                    </a>
+                </div>
+                <div class="col d-flex abouthome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#todoModal">
+                        <img src="/img/placeholder.png">
+                        <h2 class="">To-Do List Auto-Updater</h2>
+                    </a>
+                </div>
+                <div class="col d-flex abouthome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#ARCModal">
+                        <img src="/img/placeholder.png">
+                        <h2 class="">Autonomous Racing Robot</h2>
+                    </a>
+                </div>
+                <div class="col d-flex abouthome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#bopitModal">
+                        <img src="/img/placeholder.png">
+                        <h2 class="">Laser Tag Bop-It</h2>
+                    </a>
+                </div>
+                <div class="col d-flex abouthome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#lcmpcbModal">
+                        <img src="/img/placeholder.png">
+                        <h2 class="">Light Chaser Mini-Matrix PCB</h2>
+                    </a>
+                </div>
+                <div class="col d-flex abouthome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#dpmModal">
+                        <img src="/img/placeholder.png">
+                        <h2 class="">Digital Paint Mixer</h2>
+                    </a>
+                </div>
+                <div class="col d-flex abouthome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#stableModal">
+                        <img src="/img/placeholder.png">
+                        <h2 class="">STABLE</h2>
+                    </a>
+                </div>
+                <div class="col d-flex abouthome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#studycapModal">
+                        <img src="/img/placeholder.png">
+                        <h2 class="">Pomodoro Study Cap</h2>
+                    </a>
+                </div>
+                <div class="col d-flex abouthome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#redbotModal">
+                        <img src="/img/placeholder.png">
+                        <h2 class="">Star Wars Robot Duel</h2>
+                    </a>
+                </div>
+                <div class="col d-flex abouthome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#makeymakeyModal">
+                        <img src="/img/placeholder.png">
+                        <h2 class="">Interactive Culture Map</h2>
+                    </a>
+                </div>
+                <div class="col d-flex abouthome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#showertimerModal">
+                        <img src="/img/placeholder.png">
+                        <h2 class="">Electronic Bathroom Timer</h2>
+                    </a>
+                </div>
+                <div class="col d-flex abouthome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#shoeguruModal">
+                        <img src="/img/placeholder.png">
+                        <h2 class="">Shoe Comfort Design Project</h2>
+                    </a>
+                </div>
+                <div class="col d-flex abouthome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#matlabgameModal">
+                        <img src="/img/placeholder.png">
+                        <h2 class="">Choose-Your-Own-Adventure Game</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="CAVEMANModal" tabindex="-1" aria-labelledby="CAVEMANModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="CAVEMANModalLabel">CAVEMAN</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">See Full Project</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="politicllmModal" tabindex="-1" aria-labelledby="politicllmModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="politicllmModalLabel">Political Persuasion Detection LLM</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">See GitHub Repository</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="seizuresensorModal" tabindex="-1" aria-labelledby="seizuresensorModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="seizuresensorModalLabel">SeizureSensor</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">See Full Project</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="litemonitrModal" tabindex="-1" aria-labelledby="litemonitrModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="litemonitrModalLabel">LiteMonitr</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">See Full Project</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="todoModal" tabindex="-1" aria-labelledby="todoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="todoModalLabel">To-Do List Auto-Updater</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">See Full Project</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="ARCModal" tabindex="-1" aria-labelledby="ARCModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="ARCModalLabel">Autonomous Racing Robot</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">See Full Project</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="bopitModal" tabindex="-1" aria-labelledby="bopitModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="bopitModalLabel">Laser Tag Bop-It</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">See Full Project</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="lcmpcbModal" tabindex="-1" aria-labelledby="lcmpcbModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="lcmpcbModalLabel">Light Chaser Mini-Matrix PCB</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">See Full Project</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="dpmModal" tabindex="-1" aria-labelledby="dpmModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="dpmModalLabel">Digital Paint Mixer</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">See Full Project</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="stableModal" tabindex="-1" aria-labelledby="stableModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="stableModalLabel">STABLE</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">See Full Project</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="studycapModal" tabindex="-1" aria-labelledby="studycapModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="studycapModalLabel">Pomodoro Study Cap</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">See Full Project</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="redbotModal" tabindex="-1" aria-labelledby="redbotModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="redbotModalLabel">Star Wars Robot Duel</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">See Full Project</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="makeymakeyModal" tabindex="-1" aria-labelledby="makeymakeyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="makeymakeyModalLabel">Interactive Culture Map</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">See Full Project</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="showertimerModal" tabindex="-1" aria-labelledby="showertimerModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="showertimerModalLabel">Electronic Bathroom Timer</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">See Full Project</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="shoeguruModal" tabindex="-1" aria-labelledby="shoeguruModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="shoeguruModalLabel">Shoe Comfort Design Project</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">See Full Project</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="matlabgameModal" tabindex="-1" aria-labelledby="matlabgameModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="matlabgameModalLabel">Choose-Your-Own-Adventure Game</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">See Full Project</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
         <div>
             <footer class="bg-light text-center py-2">
                 <div class="container">
