@@ -1,6 +1,6 @@
 :root {
 	--timelinecolor: #8b07d8;
-	--highlightscolor: #af5cdf;
+	--highlightscolor: #baa59e;
 }
 
 body {
@@ -218,7 +218,7 @@ ul.timeline-list li:before {
 }
 
 .highlightssection {
-	height: 55vmin;
+	height: 65vmin;
 	background-color: var(--highlightscolor);
 	padding: 10px 0px 25px 0px;
 }
