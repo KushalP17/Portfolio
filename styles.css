@@ -31,25 +31,28 @@ body {
     overflow: hidden;
     /* text-align: center; */
     position: relative;
-    /* background-color: green; */
+    background-color: black;
 }
 
 .experienceshome {
     padding: 0px;
     overflow: hidden;
     position: relative;
+	background-color: black;
 }
 
 .projectshome {
     padding: 0px;
     overflow: hidden;
     position: relative;
+	background-color: black;
 }
 
 .abouthome {
     padding: 0px;
     overflow: hidden;
     position: relative;
+	background-color: black;
 }
 
 .topicselectors img, .topicselectors a {
