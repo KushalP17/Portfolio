@@ -108,6 +108,12 @@ body {
     width: 98vw;
 }
 
+.aboutmesection {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    width: 98vw;
+}
+
 .section-title {
   margin-bottom: 60px;
 }
