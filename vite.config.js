@@ -9,7 +9,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
-                education: resolve(__dirname, 'education/education.html'),
+                education: resolve(__dirname, 'education/index.html'),
                 profexp: resolve(__dirname, 'profexp/index.html'),
                 projects: resolve(__dirname, 'projects/index.html'),
             },
