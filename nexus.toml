@@ -1,0 +1,10 @@
+[host]
+name = "portfolio"
+domain = "kushalparekh.com"
+
+[source]
+branch = "main"
+
+[deploy]
+build_command = "npm install . && npm run build"
+publish_directory = "dist"
