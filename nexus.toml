@@ -1,6 +1,7 @@
 [host]
 name = "portfolio"
 domain = "kushalparekh.com"
+email = "parekhkushal17@gmail.com"
 
 [source]
 branch = "main"
