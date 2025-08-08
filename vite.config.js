@@ -12,6 +12,7 @@ export default defineConfig({
                 education: resolve(__dirname, 'education/index.html'),
                 profexp: resolve(__dirname, 'profexp/index.html'),
                 projects: resolve(__dirname, 'projects/index.html'),
+                about: resolve(__dirname, 'about/index.html'),
             },
         },
     },
