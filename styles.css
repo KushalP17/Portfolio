@@ -5,6 +5,7 @@
 
 body {
     padding-top: 72px;
+	overflow-x:hidden;
 }
 
 #header-content-list {
@@ -115,12 +116,14 @@ body {
 }
 
 .section-title {
-  margin-bottom: 60px;
+  	margin-bottom: 60px;
 }
+
 .section-title p {
 	color: #777;
 	font-size: 16px;
 }
+
 .section-title h4 {
 	text-transform: capitalize;
 	font-size: 40px;
@@ -129,6 +132,7 @@ body {
 	margin-bottom: 20px;
 	font-weight: 600;
 }
+
 .section-title h4:before {
 	position: absolute;
 	content: "";
@@ -139,6 +143,7 @@ body {
 	left: 50%;
 	margin-left: -30px;
 }
+
 .section-title h4:after {
 	position: absolute;
 	background-color: var(--timelinecolor);
@@ -158,8 +163,9 @@ body {
 ul.timeline-list {
 	position: relative;
 	margin: 0;
-	padding: 0
+	padding: 0;
 }
+
 ul.timeline-list:before {
 	position: absolute;
 	content: "";
@@ -171,55 +177,103 @@ ul.timeline-list:before {
 	-webkit-transform: translateX(-50%);
 	        transform: translateX(-50%);
 }
+
 ul.timeline-list li {
 	position: relative;
 	clear: both;
 	display: table;
     width: 100%;
-}
-.timeline_content {
-	border: 2px solid var(--timelinecolor);
-	background-color:#fff;
+	margin-bottom: 30px;
 }
 
-ul.timeline-list li .timeline_content {
+.timeline_content {
+	border: 2px solid var(--timelinecolor);
+	background-color: #fff;
 	width: 45%;
 	color: #333;
 	padding: 30px;
 	float: left;
 	text-align: center;
+	border-radius: 10px;
+	position: relative;
 }
-ul.timeline-list li:nth-child(2n) .timeline_content {
+
+/* Alternating layout for larger screens */
+ul.timeline-list li:nth-child(even) .timeline_content {
 	float: right;
 	text-align: center;
+}
+
+/* Speech bubble arrows for larger screens - pointing toward center */
+.timeline_content:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	border: 15px solid transparent;
+	border-left-color: var(--timelinecolor);
+	right: -32px;
+	z-index: 2;
+}
+
+.timeline_content:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	border: 13px solid transparent;
+	border-left-color: #fff;
+	right: -28px;
+	z-index: 3;
+}
+
+ul.timeline-list li:nth-child(even) .timeline_content:before {
+	border-right-color: var(--timelinecolor);
+	border-left-color: transparent;
+	right: auto;
+	left: -32px;
+}
+
+ul.timeline-list li:nth-child(even) .timeline_content:after {
+	border-right-color: #fff;
+	border-left-color: transparent;
+	right: auto;
+	left: -28px;
 }
 
 .timeline_content h4 {
 	font-size: 22px;
 	font-weight: 600;
 	margin: 10px 0;
-}
-ul.timeline-list li:before {
-	position: absolute;
-	content: "";
-	width: 25px;
-	height: 25px;
-	background-color: var(--timelinecolor);
-	left: 50%;
-	top: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
-	border-radius: 50%;
-}
-.timeline_content span {
-	font-size: 18px;
-	font-weight: 500;
-	font-family: poppins;
 	color: var(--timelinecolor);
 }
 
+/* Timeline markers (circles) - positioned on the timeline line */
+ul.timeline-list li:before {
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-color: var(--timelinecolor);
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	z-index: 10;
+	border: 3px solid #fff;
+}
+
+.timeline_content span {
+	font-size: 18px;
+	font-weight: 500;
+	font-family: 'Poppins', sans-serif;
+	color: var(--timelinecolor);
+	display: block;
+	margin-bottom: 10px;
+}
+
 .linkbreak {
-    word-break: break-all;
+	word-break: break-all;
 }
 
 .hltitle {
@@ -275,4 +329,165 @@ ul.timeline-list li:before {
 
 .hlcaption-small {
 	text-shadow: 2px 2px #000;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+	.section-title h4 {
+		font-size: 30px;
+	}
+	
+	.container {
+		width: 95%;
+	}
+
+	/* Move timeline line to the left */
+	ul.timeline-list:before {
+		left: 25px;
+		transform: none;
+	}
+
+	/* All timeline items stack vertically */
+	ul.timeline-list li {
+		margin-bottom: 40px;
+		min-height: 60px;
+		display: flex;
+		align-items: center;
+	}
+
+	.timeline_content {
+		width: auto;
+		float: none;
+		margin-left: 60px;
+		margin-right: 15px;
+	}
+
+	/* Remove alternating positioning */
+	ul.timeline-list li:nth-child(even) .timeline_content {
+		float: none;
+		margin-left: 60px;
+		margin-right: 15px;
+	}
+
+	/* Adjust timeline markers for mobile - positioned on the line */
+	ul.timeline-list li:before {
+		left: 25px;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 16px;
+		height: 16px;
+	}
+
+	/* Mobile speech bubble arrows - all point right from line */
+	.timeline_content:before {
+		border-right-color: var(--timelinecolor);
+		border-left-color: transparent;
+		left: -20px;
+		right: auto;
+		border-width: 10px;
+	}
+
+	.timeline_content:after {
+		border-right-color: #fff;
+		border-left-color: transparent;
+		left: -17px;
+		right: auto;
+		border-width: 10px;
+	}
+
+	ul.timeline-list li:nth-child(even) .timeline_content:before {
+		border-right-color: var(--timelinecolor);
+		border-left-color: transparent;
+		left: -20px;
+		right: auto;
+		border-width: 10px;
+	}
+
+	ul.timeline-list li:nth-child(even) .timeline_content:after {
+		border-right-color: #fff;
+		border-left-color: transparent;
+		left: -17px;
+		right: auto;
+		border-width: 10px;
+	}
+
+	.timeline_content {
+		padding: 20px;
+		font-size: 16px;
+	}
+
+	.timeline_content h4 {
+		font-size: 20px;
+	}
+
+	.timeline_content span {
+		font-size: 16px;
+	}
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+	.section-title h4 {
+		font-size: 24px;
+	}
+
+	ul.timeline-list:before {
+		left: 20px;
+	}
+
+	.timeline_content {
+		margin-left: 50px;
+		margin-right: 10px;
+		padding: 15px;
+	}
+
+	ul.timeline-list li:nth-child(even) .timeline_content {
+		margin-left: 50px;
+		margin-right: 10px;
+	}
+
+	ul.timeline-list li:before {
+		left: 20px;
+		width: 14px;
+		height: 14px;
+		transform: translate(-50%, -50%);
+	}
+
+	.timeline_content:before {
+		left: -20px;
+		border-width: 10px;
+	}
+
+	.timeline_content:after {
+		left: -18px;
+		border-width: 10px;
+	}
+
+	ul.timeline-list li:nth-child(even) .timeline_content:before {
+		left: -20px;
+		border-width: 10px;
+	}
+
+	ul.timeline-list li:nth-child(even) .timeline_content:after {
+		left: -18px;
+		border-width: 10px;
+	}
+
+	.timeline_content span {
+		font-size: 14px;
+	}
+
+	.timeline_content h4 {
+		font-size: 18px;
+	}
+}
+
+.btn-primary {
+	background-color: var(--timelinecolor);
+	border-color: var(--timelinecolor);
+}
+
+.btn-primary:hover {
+	background-color: #47066d;
+	border-color: #47066d;
 }
