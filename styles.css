@@ -491,3 +491,9 @@ ul.timeline-list li:before {
 	background-color: #47066d;
 	border-color: #47066d;
 }
+
+iframe {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+}
