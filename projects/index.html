@@ -119,9 +119,33 @@
         <div class="topicselectors">
             <div class="row row-cols-1 row-cols-md-3">
                 <div id="caveman" class="col d-flex educationhome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#CAVEMANMAPModal">
+                        <img src="/img/blog_map_bestmap.png">
+                        <h2 class="">Mapping Pipeline (C.A.V.E.M.A.N.)</h2>
+                    </a>
+                </div>
+                <div id="caveman" class="col d-flex educationhome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#CAVETalkModal">
+                        <img src="/img/CAVEMAN_Logo.png">
+                        <h2 class="">CAVeTalk (C.A.V.E.M.A.N.)</h2>
+                    </a>
+                </div>
+                <div id="caveman" class="col d-flex educationhome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#CAVESITEModal">
+                        <img src="/img/CAVEMAN_Logo.png">
+                        <h2 class="">caverobotics website (C.A.V.E.M.A.N.)</h2>
+                    </a>
+                </div>
+                <div id="caveman" class="col d-flex educationhome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#CAVEROSModal">
+                        <img src="/img/CAVEMAN_Logo.png">
+                        <h2 class="">ROS Movement Messaging Frameworks (C.A.V.E.M.A.N.)</h2>
+                    </a>
+                </div>
+                <div id="caveman" class="col d-flex educationhome grey-on-hover sectiontext bgdark">
                     <a href="" data-bs-toggle="modal" data-bs-target="#CAVEMANModal">
                         <img src="/img/buddyrover.jpg">
-                        <h2 class="">C.A.V.E.M.A.N.</h2>
+                        <h2 class="">C.A.V.E.M.A.N. (Whole Project)</h2>
                     </a>
                 </div>
                 <div id="politicllm" class="col d-flex experienceshome grey-on-hover sectiontext bgdark">
@@ -217,6 +241,180 @@
             </div>
         </div>
         <!-- Modal -->
+        <div class="modal fade" id="CAVEMANMAPModal" tabindex="-1" aria-labelledby="CAVEMANMAPModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="CAVEMANMAPModalLabel">CAVEMAN Mapping Pipeline</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1>CAVEMAN Mapping Pipeline</h1>
+                    <h3>Image to 3D Map (Photogrammetry) Pipeline</h3>
+                    <br>
+                    <h4>Project Summary:</h4>
+                    <p>
+                        Created an end-to-end image-to-3D map pipeline to convert images taken by the CAVEMAN rover into accurate 3D maps of the environment.
+                    </p>
+                    <ul>
+                        <li>Developed consecutive image analysis, binning, and sampling algorithm</li>
+                        <li>Created automated script with command-line interface to run a folder of images through pipeline</li>
+                        <li>Automated file conversion from OBJ & MTL to GLTF using Blender CLI</li>
+                        <li>Utilized Meshroom CLI to automatically run photogrammetry pipeline</li>
+                        <li>Detect and filter out blurry images using Laplacian Variance in OpenCV</li>
+                        <li>Displayed 3D Maps in a portable WebViewer format and an interactive VR format</li>
+                        <li>Tested similarity hashing algorithms for similar image recognition</li>
+                        <li>Used RTABMAP and Meshlab as 3D Reconstruction variants</li>
+                    </ul>
+                    <br>
+                    <h4>Project Achievements:</h4>
+                    <ul>
+                        <li>Created 10 colored maps of explored & documented environments with high accuracy viewable on the web or in virtual reality</li>
+                        <li>Design sampling algorithm to reduce redundant image data, improve 3D mesh quality, and reduce pipeline runtime by 80x</li>
+                        <li>Created custom viewers for interactive 3D map traversal online and in VR</li>
+                    </ul>
+                    <h4>Skills:</h4>
+                    <ul>
+                        <li>Computer Vision/OpenCV</li>
+                        <li>Python</li>
+                        <li>Photogrammetry</li>
+                        <li>Meshroom</li>
+                        <li>Blender</li>
+                        <li>Three.js</li>
+                        <li>VR Systems</li>
+                        <li>SimLab VR</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a type="button" target="_blank" class="btn btn-primary" href="https://caverobotics.com/process/#mapping">Read More</a>
+                <a type="button" target="_blank" class="btn btn-primary" href="https://caverobotics.com/maps/">See Maps</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="CAVETalkModal" tabindex="-1" aria-labelledby="CAVETalkModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="CAVETalkModalLabel">CAVeTalk</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1>CAVeTalk</h1>
+                    <h3>Intersystem UART- & Protobuf-Based Messaging Protocol</h3>
+                    <br>
+                    <h4>Project Summary:</h4>
+                    <p>
+                        CAVeTalk is our custom communication protocol for messaging between the high-level computer and the low-level microcontroller. It uses UART as the physical layer and Protocol Buffers as the data serialization format. It encompasses movement commands, sensor readings, configs, status updates.
+                    </p>
+                    <ul>
+                        <li>15 Protocol Buffer Messages</li>
+                        <li>Unit-tested All Messages and Layers using GoogleTest</li>
+                        <li>Created C & C++ Message Implementations</li>
+                    </ul>
+                    <img src="/img/cavetalk.png" alt="CAVeTalk Diagram" style="max-width: 100%; height: auto;">
+                    <br>
+                    <h4>Skills:</h4>
+                    <ul>
+                        <li>C/C++</li>
+                        <li>Protocol Buffers</li>
+                        <li>GoogleTest Unit Testing</li>
+                        <li>GitHub</li>
+                        <li>Jira</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a type="button" target="_blank" class="btn btn-primary" href="https://caverobotics.com">See Full Website</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="CAVESITEModal" tabindex="-1" aria-labelledby="CAVESITEModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="CAVESITEModalLabel">CAVEMAN Portfolio Website</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1>caverobotics.com</h1>
+                    <h3>Interactive Portfolio Website for CAVEMAN</h3>
+                    <br>
+                    <h4>Project Summary:</h4>
+                    <p>
+                        Created a portfolio website to document and showcase the CAVEMAN project, its members, and its achievements.
+                    </p>
+                    <ul>
+                        <li>View 3D Models of Rover and PCB</li>
+                        <li>Interactive Walkthroughs of 3D Maps</li>
+                        <li>Explanation of Project</li>
+                        <li>Process Blog</li>
+                        <li>Meet the Team Section</li>
+                    </ul>
+                    <h4>Skills:</h4>
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>React Bootstrap</li>
+                        <li>React Three Fiber</li>
+                        <li>Three.js</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a type="button" target="_blank" class="btn btn-primary" href="https://caverobotics.com">See Full Website</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="CAVEROSModal" tabindex="-1" aria-labelledby="CAVEROSModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="CAVEROSModalLabel">CAVEMAN</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1>CAVEMAN Movement Testing Frameworks</h1>
+                    <h3>XML Interfaces for Custom Camera and Wheel Movement Profiles integrated with ROS and CAVeTalk</h3>
+                    <br>
+                    <h4>Project Summary:</h4>
+                    <p>
+                        Created two frameworks that allow users to make custom movement profiles for camera servo positions and wheel speed and turn-rate by cycling through timed states.
+                    </p>
+                    <ul>
+                        <li>Parse XML Files to create arrays of profiles and positions</li>
+                        <li>Timed Cycling between positions with a specific profile</li>
+                        <li>Controller-interfacing to switch profiles</li>
+                    </ul>
+                    <br>
+                    <h4>Project Achievements:</h4>
+                    <ul>
+                        <li>Created 6 Camera Movement Profiles - Figure 8, Vertical, Horizontal, Cross, etc.</li>
+                        <li>PID Tuning via Wheel Speed and Turn-rate Profiles</li>
+                        <li>Live Testing using Camera Movement Profiles, resulting in a usable map</li>
+                    </ul>
+                    <h4>Skills:</h4>
+                    <ul>
+                        <li>C++</li>
+                        <li>XML</li>
+                        <li>ROS2</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a type="button" target="_blank" class="btn btn-primary" href="https://caverobotics.com">See Full Website</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
         <div class="modal fade" id="CAVEMANModal" tabindex="-1" aria-labelledby="CAVEMANModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
