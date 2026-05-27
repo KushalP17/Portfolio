@@ -64,7 +64,6 @@
                             <div class="carousel-caption d-block d-md-none hlcaption-small">
                                 <h2>C.A.V.E.<wbr>M.A.N.</h2>
                             </div>
-                            
                         </div> 
                         <div class="carousel-item hlcard">
                             <a href="" data-bs-toggle="modal" data-bs-target="#litemonitrModal">
@@ -118,6 +117,30 @@
           </nav>
         <div class="topicselectors">
             <div class="row row-cols-1 row-cols-md-3">
+                <div id="VANTAGENOS3" class="col d-flex educationhome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#VANTAGENOS3Modal">
+                        <img src="/img/vantagenos3thumbnail.png">
+                        <h2 class="">VANTAGE NOS3 Digital Twin</h2>
+                    </a>
+                </div>
+                <div id="KEYCLASS" class="col d-flex educationhome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#KEYCLASSModal">
+                        <img src="/img/keyclasspr.png">
+                        <h2 class="">Music Key Classification ML Model</h2>
+                    </a>
+                </div>
+                <div id="EDGECOMPUTE" class="col d-flex educationhome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#EDGECOMPUTEModal">
+                        <img src="/img/edgecomputejetson.png">
+                        <h2 class="">Edge Compute YOLOv8 Performance Comparison</h2>
+                    </a>
+                </div>
+                <div id="AIIMUDR" class="col d-flex educationhome grey-on-hover sectiontext bgdark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#AIIMUDRModal">
+                        <img src="/img/aiimudr.jpg">
+                        <h2 class="">Quantized AI IMU Dead-Reckoning</h2>
+                    </a>
+                </div>
                 <div id="EDAC" class="col d-flex educationhome grey-on-hover sectiontext bgdark">
                     <a href="" data-bs-toggle="modal" data-bs-target="#EDACModal">
                         <img src="/img/edac_icon.jpg">
@@ -253,6 +276,175 @@
             </div>
         </div>
         <!-- Modal -->
+
+        <div class="modal fade" id="VANTAGENOS3Modal" tabindex="-1" aria-labelledby="VANTAGENOS3ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="VANTAGENOS3ModalLabel">VANTAGE NOS3 Digital Twin</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1>Operational Digital Twin of STP-H12-VANTAGE Payload developed through NSF-SHREC & NASA IV&V</h1>
+                    <h3>Graduate Research Project creating VANTAGE Digital Twin on top of NOS3 Simulator</h3>
+                    <br>
+                    <h4>Project Summary:</h4>
+                    <p>
+                        Designed, Implemented, & Iterated VANTAGE Digital Twin in NOS3 with Orbit-Accurate Camera Capture of RGB & Event-based Images
+                    </p>
+                    <ul>
+                        <li>Created 2 High Fidelity Camera Simulators interfaced with cFS, COSMOS Ground Software, and simulated hardware protocols all in NOS3</li>
+                        <li>Utilized NASA GIBS API for GPS-linked LEO Satellite Imagery</li>
+                        <li>Utilized Video 2 Events (V2E) to create inertially-accurate Neuromorphic Frames with VANTAGE-specific parameters</li>
+                        <li>Piped GPS Data into Camera Sims via cFS at 1Hz to inform Satellite Imagery Coordinates and Velocities for Accurate Image Retrival</li>
+                        <li>Decoupled & Synced Camera Captures for the 2 Simulators with Flight Accurate, High Quality, Internal Database, and Sample Captures.</li>
+                        <li>Created Custom Docker Images for Camera Simulator Functionality</li>
+                    </ul>
+                    <br>
+                    <img src="/img/VANTAGENOS3_sysdiagram.png" alt="VANTAGE NOS3 System Diagram" style="max-width: 100%; height: auto;">
+                    <br>
+                    <br>
+                    <ul>
+                        <li>Developed High Fidelity Simulation System Architecture for VANTAGE Digital Twin</li>
+                        <li>Designed Modular Component Simulator Layers to achieve Optimal Testing Fidelity and Depth via QEMU, NOS3, and Real Hardware</li>
+                    </ul>
+                    <img src="/img/NOS3QEMU_sysdiagram.png" alt="NOS3 QEMU HITL System Diagram" style="max-width: 100%; height: auto;">
+                    <br>
+                    <h4>Skills:</h4>
+                    <ul>
+                        <li>C</li>
+                        <li>CMake</li>
+                        <li>Docker</li>
+                        <li>QEMU</li>
+                        <li>Linux</li>
+                        <li>APIs</li>
+                        <li>Neuromorphic Technology</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a type="button" target="_blank" class="btn btn-primary" href="https://shrec-vantage.space/">Learn More</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="KEYCLASSModal" tabindex="-1" aria-labelledby="KEYCLASSModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="KEYCLASSModalLabel">CNN LSTM Music Key Classification</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1>Classifying Musical Keys utilizing a CNN-LSTM Architecture</h1>
+                    <h3>2-person Research Project designing, constructing, and iterating an end-to-end music classification pipeline</h3>
+                    <br>
+                    <h4>Project Summary:</h4>
+                    <p>
+                        Designed, Implemented, Trained, & Optimized End-to-End Music Key Classification Pipeline using a CNN-LSTM Architecture.
+                    </p>
+                    <br>
+                    <img src="/img/CNNLSTMAdv.png" width="100%">
+                    <br>
+                    <ul>
+                        <li>Designed CNN-LSTM (Convolutional Neural Network & Long Short-Term Memory) Architecture in PyTorch</li>
+                        <li>Created MIDI to WAV/MP3 to Spectrogram Pipeline with GPU Acceleration to Construct Dataset</li>
+                        <li>Conducted Model Hyperparameter Scaling Studies on Supercomputer Clusters to Optimize Performance</li>
+                        <li>Achieved 86% Validation Accuracy & 63% Test Accuracy on Real-World Noisy Data.</li>
+                    </ul>
+                    <h4>Skills:</h4>
+                    <ul>
+                        <li>PyTorch</li>
+                        <li>Python</li>
+                        <li>High Performance Computing</li>
+                        <li>Machine Learning Architecture</li>
+                        <li>Automation</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a type="button" target="_blank" class="btn btn-primary" href="https://github.com/pas218/pr-music-key-classification">See Full Project</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="EDGECOMPUTEModal" tabindex="-1" aria-labelledby="EDGECOMPUTEModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="EDGECOMPUTEModalLabel">YOLOv8 Edge Compute Comparison</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1>YOLOv8 Object Tracking Comparison on Various Edge Acceleration Compute Devices</h1>
+                    <h3>3-person Research Project comparing YOLOv8 Implementations on various edge acceleration platforms</h3>
+                    <br>
+                    <h4>Project Summary:</h4>
+                    <p>
+                        Implemented & Compared YOLOv8 (all sizes) with different optimization backends on an Nvidia Jetson Orin Nano Super to FPGA & RISC-V Vector Extension Accelerators.
+                    </p>
+                    <ul>
+                        <li>Measured Latency, Resource Consumption, Power Consumption, Training Times, and Development Productivity on all platforms.</li>
+                        <li>Tested YOLOv8 Nano, Small, Medium, Large, and Extra Large.</li>
+                        <li>Tested YOLOv8 model backends of PyTorch, ONNX, and TensorRT.</li>
+                        <li>Created automated initialization and measurement pipelines for scaling study.</li>
+                    </ul>
+                    <h4>Skills:</h4>
+                    <ul>
+                        <li>PyTorch</li>
+                        <li>Python</li>
+                        <li>Automation</li>
+                        <li>GPUs</li>
+                        <li>Nvidia Jetpack</li>
+                        <li>CUDA</li>
+                        <li>Machine Learning</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a type="button" target="_blank" class="btn btn-primary" href="https://github.com/KushalP17/ObjectTracking-EdgeCompute/tree/Jetson">See Full Project</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="AIIMUDRModal" tabindex="-1" aria-labelledby="AIIMUDRModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="AIIMUDRModalLabel">Quantized AI IMU Dead-Reckoning</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1>Quantized AI IMU Dead-Reckoning</h1>
+                    <h3>2-person Research Project quantizing an AI IMU Dead-Reckoning project to port to embedded devices</h3>
+                    <br>
+                    <h4>Project Summary:</h4>
+                    <p>
+                        Implemented & Compared Post-Training Linear Quantization & CUDA Acceleration to improve model performance of an AI-Augmented EKF for IMU Dead-Reckoning.
+                    </p>
+                    <ul>
+                        <li>Created Post-Training Linear Quantization Layers in PyTorch to Reduce Resource Consumption and Latency.</li>
+                        <li>Added GPU Accelerated Model Layers in PyTorch for Reduced Resource Consumption and Latency.</li>
+                        <li>Compared 4 permutations of methods on 3 different devices, including Nvidia Jetson Orin Nano Super.</li>
+                    </ul>
+                    <h4>Skills:</h4>
+                    <ul>
+                        <li>PyTorch</li>
+                        <li>Python</li>
+                        <li>CUDA</li>
+                        <li>Machine Learning</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a type="button" target="_blank" class="btn btn-primary" href="https://github.com/KushalP17/ai-imu-dr-quantzn">See Full Project</a>
+                </div>
+            </div>
+            </div>
+        </div>
 
         <div class="modal fade" id="EDACModal" tabindex="-1" aria-labelledby="EDACModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
